@@ -1,0 +1,37 @@
+body {
+
+border-left:0px;
+border-spacing: 0px;
+}
+footer {
+	background: blue;
+	padding-top: 100px;
+	text-align: center;
+}
+header {
+	background: yellow;
+	padding: px;
+	text-align: center;
+
+}
+nav {
+	background: green;
+	display: inline;
+	padding: 100px;
+	text-align: center;
+
+}
+
+
+
+.fb-ic {
+	padding: 100px;
+
+}
+
+.ins-ic {
+	padding: 100px;
+}
+.gplus-ic {
+	padding: 100px;
+}

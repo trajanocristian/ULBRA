@@ -1,0 +1,37 @@
+Algoritmo "vendas"
+
+Var
+ valor, condicao: inteiro;
+ total: real;
+
+
+Inicio
+escreva ("Digite o valor do produto: ")
+leia (valor)
+escreval ("Informe a forma de pagamento: ")
+escreval (" 1 - Venda à vista ")
+escreval (" 2 - Venda a Prazo 30 dias ")
+escreval (" 3 - Venda a Prazo 60 dias ")
+escreval (" 4 - Venda a Prazo 90 dias ")
+escreval (" 5 - Venda com cartão de débito ")
+escreval (" 6 - Venda com cartão de crédito ")
+leia (condicao)
+escolha (condicao)
+        caso 1
+             total<- valor -(valor*0.1)
+        caso 2
+             total<- valor -(valor*0.05)
+        caso 3
+             total<- valor
+        caso 4
+             total<- valor+(valor*0.05)
+        caso 5
+             total<- valor-(valor*0.08)
+        caso 6
+             total<- valor-(valor*0.07)
+fimescolha
+escreval ("Valor final é: ", total)
+
+
+
+Fimalgoritmo

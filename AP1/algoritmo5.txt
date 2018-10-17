@@ -1,0 +1,48 @@
+Algoritmo "media"
+
+Var
+ aulas: inteiro;
+ situacao: caracter;
+ g1, g2, g3, media, frequencia: real;
+
+
+Inicio
+escreval ("Digite a nota do G1: ")
+leia (g1)
+escreval ("Digite a nota do G2: ")
+leia (g2)
+escreval ("Digite a frequencia do aluno: ")
+leia (aulas)
+frequencia <- (aulas*100)/68
+media <- (g1+g2*2)/3
+
+se (media < 6.0) ou (frequencia < 75.0) entao
+   se (frequencia >= 75) entao
+      escreva ("Digite a nota do G3: ")
+      leia (g3)
+      se (g1>=g2) entao
+         media <- (g1+g3*2)/3
+         se (media <= 6.0) entao
+            situacao <- ("Reprovado")
+         senao
+              situacao <- ("Aprovado")
+         fimse
+      senao
+         media <- (g3+g2*2)/3
+         se (media <= 6.0) entao
+            situacao <- ("Reprovado")
+         senao
+              situacao <- ("Aprovado")
+         fimse
+      fimse
+   senao
+        situacao <- ("Reprovado")
+   fimse
+senao
+     situacao <- ("Aprovado")
+fimse
+
+escreva(situacao)
+
+
+Fimalgoritmo

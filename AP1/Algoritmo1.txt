@@ -1,0 +1,40 @@
+Algoritmo "ingresso"
+
+Var
+ valor, sexo, cor: inteiro;
+
+
+
+Inicio
+escreval ("Digite a cor da camisa do cliente: ")
+escreval (" 1 - Rosa ")
+escreval (" 2 - Azul ")
+escreval (" 3 - Preto ")
+escreval (" 4 - Laranja ")
+
+leia (cor)
+escolha (cor)
+        caso 1
+             valor <- 20
+        caso 2
+             valor <- 30
+        caso 3
+             escreval ("Informe o sexo do cliente: " )
+             escreval ("1 - Masculino" )
+             escreval ("2 - Feminino" )
+             leia (sexo)
+             escolha (sexo)
+                     caso 1
+                          valor<- 15
+                     caso 2
+                          valor<- 10
+             fimescolha
+        caso 4
+             valor <- 25
+
+fimescolha
+escreval ("O valor do ingresso é: ", valor)
+
+
+
+Fimalgoritm
